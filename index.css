@@ -1,0 +1,297 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ede0d4;
+}
+
+/*navigation start*/
+.topSection {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 60px 300px 1fr;
+}
+
+.navigation {
+  display: grid;
+  grid-column: 1/12;
+  grid-row: 1/2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home {
+  display: grid;
+  grid-column: 3/5;
+  align-items: center;
+  width: 8vmin;
+  font-size: 3.5vmin;
+}
+
+.aboutLink {
+  display: grid;
+  grid-column: 5/7;
+  align-items: center;
+  width: 9vmin;
+  font-size: 3.5vmin;
+}
+
+.ideasLink {
+  display: grid;
+  grid-column: 7/9;
+  align-items: center;
+  width: 8vmin;
+  font-size: 3.5vmin;
+}
+
+.aboutLink, .home, .ideasLink {
+  font-family: Josefin Sans, sans-serif;
+}
+
+.navigation a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: white;
+  border-bottom: solid white 2px;
+}
+
+.navigation .active {
+  color: white;
+  border-bottom: solid white 2px;
+}
+/*navigation end*/
+
+.intro {
+  background-image: url("Images/ideas.png");
+  background-size: cover;
+  grid-area: 1/1/4/12;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.intro h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 8vmin;
+  font-family: Josefin Sans, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.intro p {
+  font-size: 3vmin;
+  font-family: Quicksand, sans-serif;
+  flex-direction: column;
+  padding: 50px;
+  width: 80vmin;
+  line-height: 5vmin;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: Josefin Sans, sans-serif;
+  text-align: center;
+}
+
+h3, h4 {
+  font-family: Josefin Sans, sans-serif;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articlesIntro {
+  background-color: #fff1e6;
+  grid-column: 1/12;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.heading {
+  padding: 30px;
+  font-size: 3vmin;
+  width: 50vmin;
+  line-height: 5vmin;
+  border: solid #ddb892 3px;
+  background-color: #f8edeb;
+  margin: 10px;
+}
+
+.furnGallery {
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+
+.furnImages {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
+  padding: 50px;
+  grid-gap: 20px;
+  grid-column: 1/12;
+}
+
+.furnImages img {
+  padding: 10px;
+}
+
+.splide__slide {
+  width: 300px;
+  height: 300px;
+}
+
+.splide__paginatio {
+  margin-top: 20px;
+}
+
+.inspo {
+  background-color: #b08968;
+  padding-top: 20px;
+  color: white;
+}
+
+.inspoImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+  grid-gap: 20px;
+  grid-column: 1/12;
+  object-fit: cover;
+}
+
+.galleries {
+  display: flex;
+  justify-content: center;
+}
+
+.living {
+  text-align: center;
+  padding: 30px;
+}
+
+.living img {
+  padding: 10px;
+}
+
+.living1 {
+  flex-direction: row;
+}
+
+.living2 {
+  flex-direction: row;
+}
+
+.public {
+  background-color: #ddb892;
+  text-align: center;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.public img {
+  padding: 10px;
+}
+
+.public1 {
+  flex-direction: row;
+}
+
+.public2 {
+  flex-direction: row;
+}
+
+/*footer start*/
+.contactFooter {
+  background-color: #ddbea9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edenFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 4vmin;
+  line-height: 6vmin;
+  padding-left: 50px;
+}
+
+.aboutFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.ideasFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.socialMedia img {
+  padding: 5px;
+}
+
+.contactFooter h3 {
+    font-family: Quicksand, sans-serif;
+}
+
+.contactFooter a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.contactFooter a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.contactFooter a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.contactFooter .active {
+  color: white;
+}
+
+h2 {
+  font-family: Josefin Sans, sans-serif;
+}
+
+/*footer end*/
